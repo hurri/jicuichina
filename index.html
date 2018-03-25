@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>集萃官网建设中...</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <style>
+        a,img,button,input,textarea,p,span,ul,div{
+       	 	-webkit-tap-highlight-color:rgba(255,255,255,0);
+        }
+        html,body,h1,h2,h3,h4,h5,p,form,button,dl,dd,dt {
+       		 margin:0; padding:0; font-size:100%;
+        }
+        html {
+        	overflow-x:hidden;
+        }
+        a,img,button,input,textarea {
+        	outline:none; border:none; background:none; -webkit-appearance:none;
+        }
+        
+        /*media响应式*/
+        @media screen and (max-width: 320px) {
+	        html {
+	        	font-size:12px;
+	        }
+        }
+        @media screen and (min-width: 320px) and (max-width: 360px) {
+	        html {
+	        	font-size:14px;
+	        }
+        }
+        @media screen and (min-width: 360px) and (max-width: 400px) {
+	        html {
+	        	font-size:16px;
+	        }
+        }
+        @media screen and (min-width: 400px) and (max-width: 440px) {
+	        html {
+	        	font-size:18px;
+	        }
+        }
+        @media screen and (min-width: 440px) and (max-width: 480px) {
+	        html {
+	        	font-size:20px;
+	        }
+        }
+        @media screen and (min-width: 480px) and (max-width: 520px) {
+	        html {
+	        	font-size:22px;
+	        }
+        }
+        @media screen and (min-width: 520px) and (max-width: 560px) {
+	        html {
+	        	font-size:24px;
+	        }
+        }
+        @media screen and (min-width: 560px) and (max-width: 600px) {
+	        html {
+	        	font-size:26px;
+	        }
+        }
+        @media screen and (min-width: 600px) {
+	        html {
+	       		 font-size:28px;
+	        }
+        }
+
+        
+        
+        body {
+        	font-family:"Hiragino Sans GB","Helvetica Neue"; 
+        	overflow:hidden;
+			background:#efefef;
+        }
+        
+        #index_box {
+        	width:100%;
+        	height:100%;
+        	overflow: hidden;
+        	text-align: center;
+        }
+    </style>
+    
+    <script type="text/javascript">
+    	window.onload = function(){
+    		var clientHeight = document.documentElement.clientHeight;
+    		var clientWidth = document.documentElement.clientWidth;
+    		
+    		var buildingIcon = document.getElementById("building_icon");
+    		if(buildingIcon.width > clientWidth){
+    			var ratio = clientWidth / buildingIcon.width;
+    			buildingIcon.style.width = clientWidth * ratio +"px";
+    			buildingIcon.style.height = buildingIcon.height * ratio +"px";
+    		}
+    		buildingIcon.style.marginTop = (clientHeight - buildingIcon.height) / 2 +"px";
+    	}
+    
+    </script>
+</head>
+<body>
+<div id="index_box">
+		<img alt="bg" src="jicui.jpg" id="building_icon" class="building_icon"><br />
+		集萃官网建设中...
+</div>
+
+</body>
+</html>
